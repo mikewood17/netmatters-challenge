@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Contact Form</title>
+    <h1> Contact Us</h1>
+</head>
+
+<body>
+    <form action="mail.php" method="POST">
+        <section>
+            <label>First Name</label>
+            <br>
+            <input type="text" name="firstName" id="firstname" required>
+        </section>
+        <br>
+        <section>
+            <label>Last Name</label>
+            <br>
+            <input type="text" name="lastName" id="lastname" required>
+        </section>
+
+        <br>
+
+        <section>
+            <label>Email Address</label>
+            <br>
+            <input type="text" name="email" id="email" required>
+        </section>
+
+        <br>
+
+        <section>
+
+            <label>Telephone number</label>
+            <br>
+            <input type="text" name="telephoneNumber" id="telephonenumber" maxlength="11" required>
+        </section>
+
+        <br>
+
+
+        <label for="subject">Subject</label>
+        <br>
+        <select name="subject" id="subject" required>
+            <option value="enquiry">Enquiry</option>
+            <option value="callBack">Call back</option>
+            <option value="complaint">Complaint</option>
+        </select>
+        <br>
+        <br>
+        <label>Message</label>
+        <br>
+        <textarea name="message" id="message" rows="6" cols="25"></textarea><br />
+        <input type="submit" value="Submit"><input type="reset" value="Clear" required>
+        </section>
+    </form>
+
+</html>
