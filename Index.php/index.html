@@ -11,13 +11,13 @@
 <body>
     <form action="mail.php" method="POST">
         <section>
-            <label>First Name</label>
+            <label>First Name (Required)</label>
             <br>
             <input type="text" name="firstName" id="firstname" required>
         </section>
         <br>
         <section>
-            <label>Last Name</label>
+            <label>Last Name (Required)</label>
             <br>
             <input type="text" name="lastName" id="lastname" required>
         </section>
@@ -25,7 +25,7 @@
         <br>
 
         <section>
-            <label>Email Address</label>
+            <label>Email Address(Required)</label>
             <br>
             <input type="text" name="email" id="email" required>
         </section>
@@ -34,15 +34,15 @@
 
         <section>
 
-            <label>Telephone number</label>
+            <label>Telephone number (Required)</label>
             <br>
-            <input type="text" name="telephoneNumber" id="telephonenumber" maxlength="11" required>
+            <input type="text" name="phoneNumber" id="phonenumber" maxlength="11" required>
         </section>
 
         <br>
 
 
-        <label for="subject">Subject</label>
+        <label for="subject">Subject (Required)</label>
         <br>
         <select name="subject" id="subject" required>
             <option value="enquiry">Enquiry</option>
@@ -51,9 +51,10 @@
         </select>
         <br>
         <br>
-        <label>Message</label>
+        <label>Message (Required)</label>
         <br>
-        <textarea name="message" id="message" rows="6" cols="25"></textarea><br />
+        <textarea name="message" id="message" rows="6" cols="25"></textarea>
+        <br>
         <input type="submit" value="Submit"><input type="reset" value="Clear" required>
         </section>
     </form>
