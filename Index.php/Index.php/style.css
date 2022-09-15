@@ -1,0 +1,25 @@
+
+
+body {
+    background-color: rgb(219, 214, 221);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  
+  form {
+    text-align: center;
+    line-height: 25px;
+    height: 80%;
+    overflow: auto;
+  }
+  
+  form hr {
+    width: 15%;
+  }
+  
+  h1 {
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+  }
+  
