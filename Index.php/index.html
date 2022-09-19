@@ -15,17 +15,17 @@
 </head>
 
 <body>
-    <form action="mail.php" method="POST">
+    <form action="index.php" method="POST">
         <section>
             <label>First Name (Required)</label>
             <br>
-            <input type="text" name="firstName" id="firstname" required>
+            <input type="text" name="firstName" id="firstname" required placeholder="'John'">
         </section>
         <br>
         <section>
             <label>Last Name (Required)</label>
             <br>
-            <input type="text" name="lastName" id="lastname" required>
+            <input type="text" name="lastName" id="lastname" required placeholder="'Doe'">
         </section>
 
         <br>
@@ -33,8 +33,7 @@
         <section>
             <label>Email Address(Required)</label>
             <br>
-            <input type="text" name="email" id="email" required>
-            <?php if(isset($output)){echo $output;}?>
+            <input type="text" name="email" id="email" required placeholder="'John@example.com'">
         </section>
 
         <br>
@@ -43,7 +42,8 @@
 
             <label>Telephone number (Required)</label>
             <br>
-            <input type="text" name="phoneNumber" id="phonenumber" maxlength="11" required>
+            <input type="text" name="phoneNumber" id="phonenumber" maxlength="11" required
+                placeholder="(max 11 digits)">
         </section>
 
         <br>
@@ -60,14 +60,11 @@
         <br>
         <label>Message (Required)</label>
         <br>
-        <textarea name="message" id="message" rows="6" cols="25" required></textarea>
+        <textarea name="message" id="message" rows="6" cols="25" required placeholder="Enter Message Here"></textarea>
         <br>
         <input type="submit" value="Submit" id="submit"><input type="reset" value="Clear" required>
         </section>
     </form>
-    <?php
-
-?>
 
 </body>
 
