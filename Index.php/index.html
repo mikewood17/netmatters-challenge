@@ -1,5 +1,6 @@
 <?php
    include_once 'includes/mail.php/server.php';
+
 ?>
 
 <!DOCTYPE HTML>
@@ -33,6 +34,7 @@
             <label>Email Address(Required)</label>
             <br>
             <input type="text" name="email" id="email" required>
+            <?php if(isset($output)){echo $output;}?>
         </section>
 
         <br>
@@ -58,9 +60,9 @@
         <br>
         <label>Message (Required)</label>
         <br>
-        <textarea name="message" id="message" rows="6" cols="25"></textarea>
+        <textarea name="message" id="message" rows="6" cols="25" required></textarea>
         <br>
-        <input type="submit" value="Submit"><input type="reset" value="Clear" required>
+        <input type="submit" value="Submit" id="submit"><input type="reset" value="Clear" required>
         </section>
     </form>
     <?php
